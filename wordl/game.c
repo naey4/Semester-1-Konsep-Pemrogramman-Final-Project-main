@@ -6,8 +6,15 @@
 
 #include "score.h"
 
+// === KODE WARNA ANSI (UNTUK OUTPUT KOTAK WORDLE) ===
+#define WARNA_RESET  "\x1b[0m"
+#define WARNA_HIJAU  "\x1b[42m\x1b[30m"  // hijau
+#define WARNA_KUNING "\x1b[43m\x1b[30m"  // kuning
+#define WARNA_ABU    "\x1b[40m\x1b[37m"  // abu / hitam
+
 /* constants */
 #define PANJANG_KATA 5
+
 
 /* minimal word list — Anda bisa ganti/isi lengkap */
 static const char *kata_bawaan[] = {
@@ -55,12 +62,21 @@ static int evaluate_and_print(const char *guess, const char *secret) {
         }
     }
     /* print (simple, no ANSI for portability) */
-    for (int i=0;i<PANJANG_KATA;++i) {
+    /* print dengan warna ala Wordle (kotak) */
+    for (int i = 0; i < PANJANG_KATA; ++i) {
         char c = toupper((unsigned char)guess[i]);
-        if (penanda[i]==2) printf("[%c]", c);
-        else if (penanda[i]==1) printf("(%c)", c);
-        else printf(" %c ", c);
-        if (i < PANJANG_KATA-1) printf(" ");
+
+        if (penanda[i] == 2) {
+            printf("%s  %c  %s", WARNA_HIJAU, c, WARNA_RESET);
+        }
+        else if (penanda[i] == 1) {
+            printf("%s  %c  %s", WARNA_KUNING, c, WARNA_RESET);
+        }
+        else {
+            printf("%s  %c  %s", WARNA_ABU, c, WARNA_RESET);
+        }
+
+        printf(" "); // jarak antar kotak
     }
     printf("\n");
     return strncmp(guess, secret, PANJANG_KATA) == 0;
