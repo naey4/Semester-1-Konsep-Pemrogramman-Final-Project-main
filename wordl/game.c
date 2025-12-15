@@ -18,8 +18,103 @@
 
 /* minimal word list — Anda bisa ganti/isi lengkap */
 static const char *kata_bawaan[] = {
+    // A
     "about","above","abuse","actor","acute","admit","adopt","adult","after","again",
-    "zoned","zones","zonks","zooms","zowie"
+    "agent","agree","ahead","alarm","album","alert","alien","allow","alone","along",
+
+    // B
+    "basic","beach","began","begin","being","below","bench","birth","black","blame",
+    "blind","block","blood","board","boost","brain","brand","bread","break","bring",
+
+    // C
+    "cable","carry","catch","cause","chain","chair","chart","check","chest","chief",
+    "child","clean","clear","clock","close","coach","coast","could","count","court",
+
+    // D
+    "dance","dated","dealt","death","delay","depth","doing","doubt","dozen","draft",
+    "drama","dream","dress","drink","drive","drove",
+
+    // E
+    "eager","early","earth","eight","elite","empty","enemy","enjoy","enter","equal",
+    "error","event","every","exact","exist","extra",
+
+    // F
+    "faith","false","fault","field","fifth","fight","final","first","fixed","flash",
+    "floor","focus","force","frame","fresh","front","fruit",
+
+    // G
+    "giant","given","glass","globe","going","grace","grade","grant","green","group",
+    "grown","guard","guess","guest",
+
+    // H
+    "happy","heart","heavy","hence","honor","horse","hotel","house","human","humor",
+
+    // I
+    "ideal","image","index","inner","input","issue",
+
+    // J
+    "joint","judge","juice",
+
+    // K
+    "known","knife","knock",
+
+    // L
+    "label","large","later","laugh","layer","learn","least","leave","light","limit",
+    "local","logic","loose","lower","lucky","lunch",
+
+    // M
+    "magic","major","maker","march","match","maybe","metal","might","minor","model",
+    "money","month","moral","motor","mount","mouse","mouth","movie","music",
+
+    // N
+    "named","never","night","noise","north","novel","nurse",
+
+    // O
+    "occur","ocean","offer","often","order","other","ought","owner",
+
+    // P
+    "panel","party","peace","phase","phone","photo","piece","pilot","pitch","place",
+    "plain","plane","plant","point","power","press","price","pride","prime","print",
+    "prior","proof","proud",
+
+    // Q
+    "queen","quick","quiet","quite",
+
+    // R
+    "radio","raise","range","rapid","reach","react","ready","refer","right","rival",
+    "river","rough","round","route","royal","rural",
+
+    // S
+    "scale","scene","scope","score","sense","serve","seven","shall","shape","share",
+    "sharp","sheet","shift","short","shown","sight","since","skill","sleep","small",
+    "smart","smile","sound","south","space","spare","speak","speed","spend","spent",
+    "split","sport","staff","stage","stand","start","state","steam","steel","stick",
+    "still","stock","stone","store","storm","story","study","stuff","style","sugar",
+
+    // T
+    "table","taken","taste","teach","thank","their","theme","there","these","thick",
+    "thing","think","third","those","three","throw","tight","times","tired","title",
+    "today","topic","total","touch","tower","track","trade","train","treat","trend",
+    "trial","trust","truth","twice",
+
+    // U
+    "under","union","unity","until","upper","urban","usage","usual",
+
+    // V
+    "valid","value","video","virus","visit","vital","voice",
+
+    // W
+    "waste","watch","water","wheel","where","which","while","white","whole","whose",
+    "woman","women","world","worry","worth","would","write","wrong",
+
+    // X
+    "xenon",
+
+    // Y
+    "yield","young","youth",
+
+    // Z
+    "zebra","zonal"
 };
 static const int jumlah_bawaan = sizeof(kata_bawaan)/sizeof(kata_bawaan[0]);
 
